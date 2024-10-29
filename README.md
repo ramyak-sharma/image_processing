@@ -1,10 +1,12 @@
-### How to build
+## How to build
 
 Open the terminal in the location where you want to build
 
-#### Run `git clone https://github.com/ramyak-sharma/image_processing.git`
-
 #### Then follow these commands:
+
+#### Clone the repo 
+`git clone https://github.com/ramyak-sharma/image_processing.git`
+
 
 #### Make build directory
 
