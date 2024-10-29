@@ -1,33 +1,71 @@
-## How to build
+# Image Processing Project
 
-Open the terminal in the location where you want to build
+This project focuses on [brief project description, e.g., "image processing algorithms for real-time applications"—optional but recommended]. Follow the steps below to set up, build, and run the project on various operating systems.
 
-#### Then follow these commands:
+## Prerequisites
 
-#### Clone the repo 
-`git clone https://github.com/ramyak-sharma/image_processing.git`
+- Install [CMake](https://cmake.org/download/) on your system.
+- A compatible C++ compiler:
+  - **Linux**: GCC or Clang
+  - **macOS**: Xcode command-line tools
+  - **Windows**: Visual Studio with C++ build tools
 
+## How to Build and Run
 
-#### Make build directory
+### 1. Clone the Repository
+Open a terminal or command prompt in the directory where you want to clone the repository and run:
+```bash
+git clone https://github.com/ramyak-sharma/image_processing.git
+cd image_processing
+```
 
-`mkdir build`
+### 2. Create a Build Directory
+Create a build directory to store compiled files:
 
-#### Use cmake to generate build file
+```bash
+Copy code
+mkdir build
+```
+### 3. Generate Build Files with CMake
+Use CMake to set up the build system.
 
-`cmake ./build`
+Linux/macOS:
+```bash
+Copy code
+cmake -S . -B build
+```
 
-#### Change to build directory
+Windows:
+```bash
+Copy code
+cmake -S . -B build -G "Visual Studio 16 2019"  # Adjust to your Visual Studio version
+```
 
-`cd build`
+### 4. Build the Project
+Move to the build directory and compile the project:
 
-#### Make the MakeFile
+Linux/macOS:
+```bash
+Copy code
+cd build
+make
+```
+Windows: Open the generated .sln file in Visual Studio, set the configuration to Release, and build the project.
 
-`make`
+### 5. Run the Program
+Go back to the main project directory and run the output binary:
 
-#### Go to the parent directory
+Linux/macOS:
+```bash
+Copy code
+cd ..
+./output
+```
+Windows: Run the executable file (output.exe) from either the terminal or the Windows file explorer.
 
-`cd ..`
+### Troubleshooting
+CMake Errors: Ensure CMake is installed and the correct version is used.
 
-#### Run the output
+Build Failures: Verify all dependencies are correctly installed and consult the logs for specific errors.
 
-`./output`
+Windows Users: Ensure Visual Studio with C++ build tools is installed. Adjust the CMake generator in Step 3 if you’re using a different Visual Studio version.
