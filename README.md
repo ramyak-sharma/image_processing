@@ -23,7 +23,6 @@ cd image_processing
 Create a build directory to store compiled files:
 
 ```bash
-Copy code
 mkdir build
 ```
 ### 3. Generate Build Files with CMake
@@ -31,13 +30,11 @@ Use CMake to set up the build system.
 
 Linux/macOS:
 ```bash
-Copy code
 cmake -S . -B build
 ```
 
 Windows:
 ```bash
-Copy code
 cmake -S . -B build -G "Visual Studio 16 2019"  # Adjust to your Visual Studio version
 ```
 
@@ -46,7 +43,6 @@ Move to the build directory and compile the project:
 
 Linux/macOS:
 ```bash
-Copy code
 cd build
 make
 ```
@@ -57,7 +53,6 @@ Go back to the main project directory and run the output binary:
 
 Linux/macOS:
 ```bash
-Copy code
 cd ..
 ./output
 ```
