@@ -1,0 +1,5 @@
+# Ignore the build directory
+/build/
+
+# Specify other files to ignore
+.DS_Store
