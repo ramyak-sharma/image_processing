@@ -1,6 +1,6 @@
 # Image Processing Project
 
-This project focuses on [brief project description, e.g., "image processing algorithms for real-time applications"—optional but recommended]. Follow the steps below to set up, build, and run the project on various operating systems.
+This project focuses on image processing algorithms for real-time applications. Follow the steps below to set up, build, and run the project on various operating systems.
 
 ## Prerequisites
 
