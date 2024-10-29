@@ -2,25 +2,31 @@
 
 Open the terminal in the location where you want to build
 
-Run `git clone https://github.com/ramyak-sharma/image_processing.git
+#### Run `git clone https://github.com/ramyak-sharma/image_processing.git
 `
 
-Then follow these commands:
+###3 Then follow these commands:
 
-Make build directory
+#### Make build directory
+
 `mkdir build`
 
-Use cmake to generate build file
+#### Use cmake to generate build file
+
 `cmake ./build`
 
-Change to build directory
+#### Change to build directory
+
 `cd build`
 
-Make the MakeFile
+#### Make the MakeFile
+
 `make`
 
-Go to the parent directory
+#### Go to the parent directory
+
 `cd ..`
 
-Run the output
+#### Run the output
+
 `./output`
