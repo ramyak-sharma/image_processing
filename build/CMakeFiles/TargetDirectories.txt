@@ -1,0 +1,9 @@
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/output.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/package.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/package_source.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/edit_cache.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/rebuild_cache.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/list_install_components.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/install.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/install/local.dir
+/Users/ramyaksharma/desktop/Proj/image_processing/build/CMakeFiles/install/strip.dir
