@@ -237,6 +237,49 @@ Image& Image::convolveClampBorder(int channel, int kerH, int kerW, float ker[], 
 	return *this;
 }
 
+Image& Image::convolveCyclic(int channel, int kerH, int kerW, float ker[], int kRc, int kCc)
+{
+	uint8_t new_data[w*h];
+	int center = kRc*kerW+kCc;
+	for(int k = channel; k<size ; k+=channels)
+	{
+		int sum = 0;
+		for(int i=-((long)kRc); i<(long)kerH-kRc; i++)
+		{
+			long row = ((long)k/channels)/w-i;
+			if(row<0)
+			{
+				row = row%h + h;
+			}
+			if(row>h-1)
+			{
+				row = row%h;
+			}
+
+			for(int j=-((long)kCc); j<(long)kerW-kCc; j++)
+			{
+				long col = ((long)k/channels)%w-j;
+				if(col<0)
+				{
+					col=col%w+w;
+				}
+				if(col>w-1)
+				{
+					col=col%w;
+				}
+			sum += ker[center+i*(long)kerW+j]*data[(row*w+col)*channels+channel];
+			}
+		}	
+		new_data[k/channels]=(uint8_t)byteBound(round(sum));
+	}
+	for(int k = channel; k<size ; k+=channels)
+	{
+		data[k] = new_data[k/channels];
+	}
+	return *this;
+}
+
+
 
 
 int byteBound(int a)

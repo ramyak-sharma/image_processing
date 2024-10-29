@@ -42,6 +42,7 @@ struct Image
 	
 	Image& convolveClamp0(int channel, int kerH, int kerW, float ker[], int kRc, int kCc);
 	Image& convolveClampBorder(int channel, int kerH, int kerW, float ker[], int kRc, int kCc);
+	Image& convolveCyclic(int channel, int kerH, int kerW, float ker[], int kRc, int kCc);
 
 };
 
